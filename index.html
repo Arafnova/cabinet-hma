@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Cabinet d'avocat de Me Nelson HANS-MOEVI AKUE à Cotonou : droit de l'urbanisme, droit de la construction, droit commercial OHADA et droit public des marchés publics.">
+<!-- APERÇU : retirer la ligne ci-dessous le jour de la mise en ligne définitive -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<title>Cabinet Hans-Moevi Akue</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --vert:#073d1e; --vert-gris:#336948; --gris:#a6a6a6; --blanc:#ffffff;
+  --encre:#10261a; --texte:#2c3a31; --pale:#eef2ef; --beige:#e8dfcd; --beige-clair:#f6f1e7; --beige-ligne:#d6c9b0; --ligne:#d5dbd7; --doux:#5d6b62;
+  --display:"Bodoni Moda","Bodoni 72","Didot",Georgia,serif;
+  --corps:"EB Garamond",Garamond,"Times New Roman",serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+body{background:var(--blanc);color:var(--texte);font-family:var(--corps);font-size:1.18rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(16px,4vw,40px)}
+h1,h2,h3{font-family:var(--display);font-weight:500;color:var(--encre);text-wrap:balance;margin:0;line-height:1.12}
+p{margin:0}
+.eyebrow{font-family:var(--corps);font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;color:var(--vert-gris);font-weight:600}
+:focus-visible{outline:2px solid var(--vert-gris);outline-offset:3px}
+section.bloc{padding-block:clamp(56px,8vw,110px)}
+
+/* En-tête */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--vert);color:var(--blanc)}
+.top .wrap{display:flex;align-items:center;justify-content:flex-end;gap:24px;min-height:72px}
+.logo-hero{display:block;width:clamp(170px,22vw,250px);height:auto;margin:0 auto clamp(20px,3vw,34px)}
+nav.menu{display:flex;align-items:center;gap:30px}
+nav.menu a{text-decoration:none;font-size:1.02rem;letter-spacing:.04em;opacity:.88;transition:opacity .2s}
+nav.menu a:hover{opacity:1}
+nav.menu a[aria-current="page"]{opacity:1;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:8px}
+nav.menu a.cta{border:1px solid rgba(255,255,255,.55);padding:8px 22px;opacity:1}
+nav.menu a.cta:hover,nav.menu a.cta[aria-current="page"]{background:var(--blanc);color:var(--vert);text-decoration:none}
+.burger{display:none;background:none;border:1px solid rgba(255,255,255,.45);color:var(--blanc);font:inherit;font-size:.9rem;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;cursor:pointer}
+@media (max-width:760px){
+  .burger{display:block}
+  nav.menu{position:absolute;left:0;right:0;top:100%;background:var(--vert);flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 20px;border-top:1px solid rgba(255,255,255,.12)}
+  nav.menu:not(.open){display:none}
+  nav.menu a{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+  nav.menu a.cta{margin-top:14px;text-align:center;border-bottom:1px solid rgba(255,255,255,.55)}
+}
+
+/* Accueil — l'avocat */
+.hero{background:var(--vert);color:var(--blanc);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(28px,5vw,72px);align-items:end;padding-block:clamp(48px,7vw,96px) 0}
+.hero-txt{padding-bottom:clamp(40px,6vw,88px)}
+.hero .eyebrow{color:var(--gris)}
+.hero h1{color:var(--blanc);font-size:clamp(2.4rem,5.4vw,4.4rem)}
+.hero h1 em{font-style:italic;color:#b9cfc1}
+.hero-photo{position:relative;margin:0}
+.hero-photo img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 0}
+.hero-photo figcaption{position:absolute;left:0;bottom:0;background:var(--vert-gris);color:var(--blanc);padding:12px 18px;font-size:.95rem;letter-spacing:.04em}
+.defile{display:inline-flex;align-items:center;gap:10px;margin-top:36px;color:#cfdcd3;text-decoration:none;font-size:1rem;letter-spacing:.08em}
+.defile::after{content:"";width:8px;height:8px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg) translateY(-3px)}
+.defile:hover{color:var(--blanc)}
+
+.avocat .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,6vw,84px);align-items:start}
+.avocat figure{margin:0}
+.avocat figure img{width:100%;height:auto}
+.avocat figcaption{font-size:.92rem;color:var(--doux);margin-top:10px;font-style:italic}
+.avocat h2,.locaux h2{font-size:clamp(2rem,4vw,3rem);margin:12px 0 22px}
+.avocat h2{margin-bottom:0}
+.texte{display:flex;flex-direction:column;gap:16px;max-width:60ch}
+.matieres{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;padding:0;list-style:none}
+.matieres a{display:inline-block;text-decoration:none;font-size:.98rem;border:1px solid var(--ligne);padding:5px 14px;color:var(--vert);transition:background .2s,color .2s}
+.matieres a:hover{background:var(--vert);border-color:var(--vert);color:var(--blanc)}
+@media (max-width:760px){
+  .hero .wrap{grid-template-columns:1fr;padding-block:40px 0}
+  .hero-txt{padding-bottom:8px}
+  .hero-photo{margin-inline:calc(-1*clamp(16px,4vw,40px))}
+  .hero-photo img{aspect-ratio:4/5}
+  .avocat .wrap{grid-template-columns:1fr}
+  .avocat figure{max-width:420px}
+}
+
+/* Accueil — les locaux */
+.locaux{background:var(--beige-clair)}
+.locaux .tete{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:end;margin-bottom:clamp(32px,5vw,56px)}
+.locaux .tete h2{margin-bottom:0}
+.galerie{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,24px);margin:0;padding:0;list-style:none}
+.galerie figure{margin:0;display:flex;flex-direction:column;gap:12px}
+.galerie img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.galerie figcaption{font-family:var(--display);font-size:1.12rem;color:var(--vert);padding-bottom:10px;border-bottom:1px solid var(--beige-ligne)}
+@media (max-width:760px){
+  .locaux .tete{grid-template-columns:1fr;gap:12px}
+  .galerie{grid-template-columns:1fr}
+}
+
+/* Domaines — grille */
+.entete{max-width:62ch;margin-bottom:clamp(32px,5vw,56px)}
+.entete h1{font-size:clamp(2.2rem,4.5vw,3.4rem);margin:12px 0 16px}
+.grille{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(40px,5vw,56px) clamp(18px,3vw,32px)}
+.carte{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:var(--blanc)}
+.carte .img{overflow:hidden;aspect-ratio:3/2;background:var(--beige-clair)}
+.carte img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+.carte:hover img{transform:scale(1.04)}
+.carte{border-bottom:3px solid var(--vert)}
+.carte .nom{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 18px;background:var(--beige-clair)}
+.carte h2{font-size:clamp(1.35rem,2.4vw,1.75rem)}
+.carte .voir{font-size:.95rem;color:var(--vert-gris);white-space:nowrap}
+.carte:hover h2{color:var(--vert-gris)}
+@media (max-width:640px){.grille{grid-template-columns:1fr;gap:44px}}
+
+/* Domaine — détail */
+.retour{display:inline-block;color:var(--vert);text-decoration:none;font-size:1.02rem;margin-bottom:28px}
+.retour:hover{color:var(--vert-gris)}
+.detail{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:start}
+.detail figure{margin:0;background:var(--beige-clair);display:flex;justify-content:center}
+.detail figure img{width:auto;max-width:100%;max-height:78vh;height:auto}
+.detail h1{font-size:clamp(2rem,4vw,3rem);margin:12px 0 22px}
+.detail .actions{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;margin-top:30px;padding-top:22px;border-top:1px solid var(--ligne)}
+.btn{display:inline-block;text-decoration:none;font-size:1.05rem;letter-spacing:.05em;padding:12px 26px;background:var(--vert);color:var(--blanc);border:1px solid var(--vert);transition:background .2s}
+.btn:hover{background:var(--vert-gris);border-color:var(--vert-gris)}
+.lien-suite{color:var(--vert);text-decoration:none;border-bottom:1px solid var(--vert-gris);padding-bottom:2px}
+.lien-suite:hover{color:var(--vert-gris)}
+@media (max-width:860px){.detail{grid-template-columns:1fr}.detail figure img{max-height:none}}
+
+/* Contact */
+.contact{background:var(--beige)}
+.contact .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,6vw,80px);align-items:start}
+.contact aside{display:flex;flex-direction:column;gap:20px}
+.contact aside h1{font-size:clamp(2.2rem,4.5vw,3.2rem)}
+.coord{display:grid;gap:16px;border-top:1px solid var(--beige-ligne);padding-top:22px;margin:0}
+.coord div{display:grid;grid-template-columns:110px 1fr;gap:12px}
+.coord dt{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--vert-gris);padding-top:4px}
+.coord dd{margin:0;color:var(--encre)}
+.note{font-size:1rem;color:var(--doux);font-style:italic}
+form.fiche{background:var(--blanc);border:1px solid var(--beige-ligne);padding:clamp(22px,4vw,44px);display:grid;grid-template-columns:1fr 1fr;gap:20px 22px;align-content:start}
+form.fiche .plein{grid-column:1/-1}
+form.fiche h2{font-size:1.6rem}
+.champ{display:flex;flex-direction:column;gap:6px;min-width:0}
+.champ label{font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;color:var(--vert);font-weight:600}
+.champ label i{font-style:normal;color:var(--vert-gris)}
+.champ input,.champ select,.champ textarea{font:inherit;font-size:1.08rem;color:var(--encre);background:var(--blanc);border:0;border-bottom:1px solid var(--gris);padding:10px 2px;border-radius:0;width:100%;min-width:0}
+.champ textarea{border:1px solid var(--gris);padding:10px 12px;min-height:170px;resize:vertical}
+.champ input:focus,.champ select:focus,.champ textarea:focus{outline:none;border-color:var(--vert);box-shadow:0 1px 0 var(--vert)}
+.champ .aide{display:flex;justify-content:space-between;gap:12px;font-size:.92rem;color:var(--doux)}
+.err{font-size:.92rem;color:#8a2a1c}
+.champ.invalide input,.champ.invalide textarea{border-color:#8a2a1c}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:1rem;line-height:1.45}
+.consent input{margin-top:5px;accent-color:var(--vert);width:18px;height:18px;flex:none}
+.envoyer button{font:inherit;font-size:1.08rem;letter-spacing:.06em;background:var(--vert);color:var(--blanc);border:1px solid var(--vert);padding:14px 34px;cursor:pointer;transition:background .2s}
+.envoyer button:hover{background:var(--vert-gris);border-color:var(--vert-gris)}
+.pret{grid-column:1/-1;background:var(--beige-clair);border-left:3px solid var(--vert);padding:22px 24px;display:flex;flex-direction:column;gap:12px}
+.pret h2{font-size:1.45rem}
+.pret pre{white-space:pre-wrap;font-family:var(--corps);font-size:1rem;background:var(--blanc);border:1px solid var(--ligne);padding:14px 16px;margin:0;max-height:260px;overflow:auto}
+.pret .boutons{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center}
+.pret button{font:inherit;background:none;border:0;border-bottom:1px solid var(--vert);color:var(--vert);cursor:pointer;padding:0}
+@media (max-width:860px){.contact .wrap{grid-template-columns:1fr}}
+@media (max-width:560px){form.fiche{grid-template-columns:1fr}.coord div{grid-template-columns:1fr;gap:2px}}
+
+/* Repères de navigation */
+body[data-page="accueil"] .lien-accueil{display:none}
+.fil{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:.98rem;color:var(--doux);margin-bottom:28px}
+.fil a{color:var(--vert);text-decoration:none;border-bottom:1px solid transparent}
+.fil a:hover{border-bottom-color:var(--vert-gris)}
+.fil span[aria-hidden]{color:var(--gris)}
+.fil [aria-current]{color:var(--encre)}
+.contact > .wrap:first-child{display:block}
+.etapes{margin:0;padding-left:22px;display:grid;gap:6px}
+.apres{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;margin-top:8px;padding-top:18px;border-top:1px solid var(--beige-ligne)}
+
+/* Politique de confidentialité */
+.politique h1{font-size:clamp(1.9rem,4vw,2.9rem);margin:12px 0 24px;max-width:24ch}
+.politique .texte{max-width:72ch}
+.politique h2{font-size:clamp(1.35rem,2.4vw,1.7rem);margin-top:18px}
+.politique ul{margin:0;padding-left:22px;display:grid;gap:6px}
+.signature{margin-top:12px;padding-top:16px;border-top:1px solid var(--beige-ligne)}
+.tableau{overflow-x:auto;margin:28px 0;border:1px solid var(--beige-ligne)}
+.glisser{display:none;font-size:.92rem;color:var(--doux);font-style:italic;margin:24px 0 -16px}
+@media (max-width:760px){.glisser{display:block}}
+.tableau table{border-collapse:collapse;width:100%;min-width:760px;font-size:1rem;line-height:1.45}
+.tableau th{background:var(--vert);color:var(--blanc);text-align:left;font-weight:600;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;padding:12px 14px}
+.tableau td{padding:12px 14px;vertical-align:top;border-top:1px solid var(--beige-ligne)}
+.tableau td[rowspan]{background:var(--beige-clair);border-left:1px solid var(--beige-ligne);border-right:1px solid var(--beige-ligne)}
+.liens-bas{display:flex;flex-wrap:wrap;gap:8px 22px}
+
+/* Pied de page */
+footer{background:var(--beige);color:var(--texte);border-top:3px solid var(--vert)}
+footer .haut{padding-block:44px 32px}
+footer h4{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--vert-gris);margin:0 0 14px;font-weight:600}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:1.02rem;color:var(--encre)}
+footer a{text-decoration:none;color:var(--vert)}
+footer a:hover{text-decoration:underline}
+.mentions{border-top:1px solid var(--beige-ligne)}
+.mentions summary{cursor:pointer;list-style:none;padding-block:22px;font-family:var(--display);font-size:1.3rem;color:var(--vert);display:flex;justify-content:space-between;align-items:center;gap:16px}
+.mentions summary::-webkit-details-marker{display:none}
+.mentions summary::after{content:"+";font-family:var(--corps);font-size:1.6rem;line-height:1}
+.mentions[open] summary::after{content:"–"}
+.mentions .contenu{columns:2 340px;column-gap:48px;padding-bottom:36px;font-size:.98rem;line-height:1.55;color:var(--texte)}
+.mentions h5{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--vert);margin:0 0 8px;font-weight:600;break-after:avoid}
+.mentions .contenu p{margin-bottom:18px}
+.mentions mark{background:var(--beige-clair);color:var(--encre);padding:0 4px;border:1px dashed var(--beige-ligne)}
+.bas{border-top:1px solid var(--beige-ligne);padding-block:18px;font-size:.92rem;color:var(--doux);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+</style>
+</head>
+<body>
+
+
+<header class="top" id="entete">
+  <div class="wrap">
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="menu" id="menu">
+      <a href="#accueil" class="lien-accueil" data-groupe="accueil">Accueil</a>
+      <a href="#domaines" data-groupe="domaines">Domaines d'intervention</a>
+      <a href="#contact" class="cta" data-groupe="contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ===== ACCUEIL ===== -->
+<div data-page="accueil" data-groupe="accueil" id="accueil">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-txt">
+        <img class="logo-hero" src="img/logo-hma.jpg" alt="HMA — Nelson HANS-MOEVI AKUE, cabinet d'avocat" width="315" height="295">
+        <h1>Le droit au service de vos <em>projets</em>.</h1>
+        <a class="defile" href="#avocat">Découvrir le cabinet</a>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/me-hans-moevi-akue.jpg" alt="Me HANS-MOEVI AKUE, debout derrière son bureau">
+        <figcaption>Me HANS-MOEVI AKUE</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="bloc avocat" id="avocat">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">L'avocat</p>
+        <h2>Me HANS&#8209;MOEVI AKUE</h2>
+      </div>
+      <div>
+        <div class="texte">
+          <p>Avocat au Barreau du Bénin, Me HANS-MOEVI AKUE exerce en droit de l'urbanisme, en droit de la construction, en droit public des marchés publics et en droit commercial OHADA.</p>
+          <p>Il intervient aussi bien en conseil, pour sécuriser les projets en amont, qu'en contentieux, pour défendre les intérêts de ses clients devant les juridictions.</p>
+          <p>Chaque dossier est suivi personnellement, dans le respect du secret professionnel et des règles déontologiques de la profession d'avocat.</p>
+        </div>
+        <ul class="matieres">
+          <li><a href="#urbanisme">Droit de l'urbanisme</a></li>
+          <li><a href="#construction">Droit de la construction</a></li>
+          <li><a href="#commercial">Droit commercial</a></li>
+          <li><a href="#marches-publics">Droit public des marchés publics</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloc locaux" id="locaux">
+    <div class="wrap">
+      <div class="tete">
+        <div>
+          <p class="eyebrow">Le cabinet</p>
+          <h2>Nos locaux</h2>
+        </div>
+        <p>Le cabinet reçoit ses clients à Cotonou, dans un cadre propice à l'écoute et à la confidentialité des échanges.</p>
+      </div>
+      <div class="galerie">
+        <figure><img loading="lazy" src="img/locaux-accueil.jpg" alt="Hall d'accueil du cabinet avec le comptoir de réception"><figcaption>L'accueil</figcaption></figure>
+        <figure><img loading="lazy" src="img/locaux-salle-attente.jpg" alt="Salle d'attente avec deux bancs en bois"><figcaption>La salle d'attente</figcaption></figure>
+        <figure><img loading="lazy" src="img/locaux-consultation.jpg" alt="Espace de consultation avec fauteuils et table basse"><figcaption>L'espace de consultation</figcaption></figure>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== DOMAINES — GRILLE ===== -->
+<section class="bloc" id="domaines" data-page="domaines" data-groupe="domaines" hidden>
+  <div class="wrap">
+    <nav class="fil" aria-label="Vous êtes ici"><a href="#accueil">Accueil</a><span aria-hidden="true">›</span><span aria-current="page">Domaines d'intervention</span></nav>
+    <div class="entete">
+      <p class="eyebrow">Le cabinet</p>
+      <h1>Domaines d'intervention</h1>
+      <p>Cliquez sur un domaine pour en découvrir le détail.</p>
+    </div>
+    <div class="grille">
+      <a class="carte" href="#urbanisme"><span class="img"><img loading="lazy" src="img/urbanisme.jpg" alt="Vue aérienne d'une ville aménagée"></span><span class="nom"><h2>Droit de l'urbanisme</h2><span class="voir">Découvrir →</span></span></a>
+      <a class="carte" href="#construction"><span class="img"><img loading="lazy" src="img/construction.jpg" alt="Chantier de construction en cours" style="object-position:50% 45%"></span><span class="nom"><h2>Droit de la construction</h2><span class="voir">Découvrir →</span></span></a>
+      <a class="carte" href="#commercial"><span class="img"><img loading="lazy" src="img/droit-commercial.jpg" alt="Signature d'un document"></span><span class="nom"><h2>Droit commercial</h2><span class="voir">Découvrir →</span></span></a>
+      <a class="carte" href="#marches-publics"><span class="img"><img loading="lazy" src="img/marches-publics.jpg" alt="Tour de la BCEAO à Cotonou" style="object-position:50% 30%"></span><span class="nom"><h2>Droit public des marchés publics</h2><span class="voir">Découvrir →</span></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DOMAINES — DÉTAILS ===== -->
+<section class="bloc" id="urbanisme" data-page="urbanisme" data-groupe="domaines" hidden>
+  <div class="wrap">
+    <nav class="fil" aria-label="Vous êtes ici"><a href="#accueil">Accueil</a><span aria-hidden="true">›</span><a href="#domaines">Domaines d'intervention</a><span aria-hidden="true">›</span><span aria-current="page">Droit de l'urbanisme</span></nav>
+    <div class="detail">
+      <figure><img loading="lazy" src="img/urbanisme.jpg" alt="Vue aérienne d'une ville aménagée"></figure>
+      <div>
+        <p class="eyebrow">Domaine d'intervention</p>
+        <h1>Droit de l'urbanisme</h1>
+        <div class="texte">
+          <p>Domaine central dans la lutte contre l'urbanisation anarchique, le droit de l'urbanisme couvre tant la réglementation en matière d'urbanisme que la réalisation d'opérations d'aménagement urbain ou plus simplement, l'obtention des autorisations de construire, de démolir ou d'aménager.</p>
+          <p>Doté d'une compétence unique en la matière, le Cabinet HANS-MOEVI AKUE accompagne tant les personnes publiques dans l'élaboration de la réglementation, que les promoteurs et particuliers porteurs de projets immobiliers ou souhaitant réaliser des opérations d'aménagement urbain.</p>
+        </div>
+        <div class="actions"><a class="btn" href="#contact" data-domaine="Droit de l'urbanisme">Exposer votre affaire</a><a class="lien-suite" href="#construction">Domaine suivant : Droit de la construction →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="construction" data-page="construction" data-groupe="domaines" hidden>
+  <div class="wrap">
+    <nav class="fil" aria-label="Vous êtes ici"><a href="#accueil">Accueil</a><span aria-hidden="true">›</span><a href="#domaines">Domaines d'intervention</a><span aria-hidden="true">›</span><span aria-current="page">Droit de la construction</span></nav>
+    <div class="detail">
+      <figure><img loading="lazy" src="img/construction.jpg" alt="Chantier de construction en cours"></figure>
+      <div>
+        <p class="eyebrow">Domaine d'intervention</p>
+        <h1>Droit de la construction</h1>
+        <div class="texte">
+          <p>La réalisation d'un projet de construction est une entreprise coûteuse pour la maîtrise d'ouvrage, qui nécessite un encadrement du risque et la garantie que le projet pourra arriver à terme.</p>
+          <p>Pour les maîtres d'œuvre et entrepreneurs, la gestion du risque professionnel nécessite d'anticiper les difficultés en amont, notamment à travers la contractualisation des rapports entre les différents intervenants.</p>
+          <p>Que vous soyez un particulier qui souhaite réaliser un projet de construction, ou un professionnel du domaine, Me HANS-MOEVI AKUE vous assiste dans la contractualisation, comme dans la résolution des litiges liés au droit de la construction.</p>
+        </div>
+        <div class="actions"><a class="btn" href="#contact" data-domaine="Droit de la construction">Exposer votre affaire</a><a class="lien-suite" href="#commercial">Domaine suivant : Droit commercial →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="commercial" data-page="commercial" data-groupe="domaines" hidden>
+  <div class="wrap">
+    <nav class="fil" aria-label="Vous êtes ici"><a href="#accueil">Accueil</a><span aria-hidden="true">›</span><a href="#domaines">Domaines d'intervention</a><span aria-hidden="true">›</span><span aria-current="page">Droit commercial</span></nav>
+    <div class="detail">
+      <figure><img loading="lazy" src="img/droit-commercial.jpg" alt="Signature d'un document"></figure>
+      <div>
+        <p class="eyebrow">Domaine d'intervention</p>
+        <h1>Droit commercial</h1>
+        <div class="texte">
+          <p>En droit OHADA, Me HANS-MOEVI AKUE accompagne les opérateurs économiques dans la protection de leurs intérêts à toutes les étapes de leur activité.</p>
+          <p>Que vous soyez entrepreneur, actionnaire ou dirigeant d'une société bien implantée, vous bénéficierez de conseils en amont pour sécuriser vos opérations commerciales, structurer votre entreprise et prévenir les risques contentieux.</p>
+          <p>En cas de litige, Me HANS-MOEVI AKUE vous représente avec rigueur devant les juridictions pour la défense de vos droits. Cette approche intégrée du conseil stratégique à la plaidoirie garantit une expertise technique et une continuité juridique qui préserve votre temps, votre trésorerie et votre réputation.</p>
+        </div>
+        <div class="actions"><a class="btn" href="#contact" data-domaine="Droit commercial">Exposer votre affaire</a><a class="lien-suite" href="#marches-publics">Domaine suivant : Droit public des marchés publics →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="marches-publics" data-page="marches-publics" data-groupe="domaines" hidden>
+  <div class="wrap">
+    <nav class="fil" aria-label="Vous êtes ici"><a href="#accueil">Accueil</a><span aria-hidden="true">›</span><a href="#domaines">Domaines d'intervention</a><span aria-hidden="true">›</span><span aria-current="page">Droit public des marchés publics</span></nav>
+    <div class="detail">
+      <figure><img loading="lazy" src="img/marches-publics.jpg" alt="Tour de la BCEAO à Cotonou"></figure>
+      <div>
+        <p class="eyebrow">Domaine d'intervention</p>
+        <h1>Droit public des marchés publics</h1>
+        <div class="texte">
+          <p>Les personnes publiques (État et collectivités territoriales) sont des moteurs essentiels des économies ouest-africaines et de l'économie béninoise en particulier.</p>
+          <p>Eu égard à la prépondérance de l'État dans le développement économique, il est essentiel d'être accompagné et conseillé, tant pour les autorités adjudicatrices dans la conception et la mise en œuvre de leurs projets que pour les opérateurs économiques qui souhaitent participer à des appels d'offres ou traiter avec l'État et ses démembrements.</p>
+          <p>Doté d'une solide expérience dans le conseil aux collectivités territoriales et le domaine des marchés publics, le Cabinet HANS-MOEVI AKUE propose un accompagnement personnalisé à tous les acteurs de la chaîne des marchés, mais aussi des autres domaines du droit public en général.</p>
+        </div>
+        <div class="actions"><a class="btn" href="#contact" data-domaine="Droit public des marchés publics">Exposer votre affaire</a><a class="lien-suite" href="#urbanisme">Domaine suivant : Droit de l'urbanisme →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="bloc contact" id="contact" data-page="contact" data-groupe="contact" hidden>
+  <div class="wrap"><nav class="fil" aria-label="Vous êtes ici"><a href="#accueil">Accueil</a><span aria-hidden="true">›</span><span aria-current="page">Contact</span></nav></div>
+  <div class="wrap">
+    <aside>
+      <p class="eyebrow">Contact</p>
+      <h1>Exposez-nous votre affaire.</h1>
+      <p>Décrivez brièvement votre situation et indiquez votre adresse e-mail : le cabinet vous répondra par e-mail.</p>
+      <dl class="coord">
+        <div><dt>Adresse</dt><dd id="adresse-cabinet">Lot 957, Sikècodji Enagnon<br>Immeuble Fifamin, Cotonou<br>08 BP 358 — Bénin</dd></div>
+        <div><dt>E-mail</dt><dd id="email-cabinet">contact@cabinetnhm</dd></div>
+      </dl>
+      <p class="note">Les échanges transmis par ce formulaire sont couverts par le secret professionnel. Évitez toutefois de joindre des pièces confidentielles à ce stade.</p>
+    </aside>
+
+    <form class="fiche" id="form-contact" novalidate>
+      <h2 class="plein">Votre message</h2>
+      <div class="champ"><label for="nom">Nom et prénom <i>*</i></label><input id="nom" autocomplete="name" required><span class="err" id="err-nom"></span></div>
+      <div class="champ"><label for="email">Votre e-mail <i>*</i></label><input id="email" type="email" autocomplete="email" required><span class="err" id="err-email"></span></div>
+      <div class="champ plein"><label for="domaine">Domaine concerné</label>
+        <select id="domaine">
+          <option value="">Je ne sais pas / autre</option>
+          <option>Droit de l'urbanisme</option>
+          <option>Droit de la construction</option>
+          <option>Droit commercial</option>
+          <option>Droit public des marchés publics</option>
+        </select></div>
+      <div class="champ plein"><label for="descriptif">Bref descriptif de l'affaire <i>*</i></label>
+        <textarea id="descriptif" maxlength="1500" placeholder="En quelques lignes : le contexte, ce qui vous préoccupe, ce que vous attendez du cabinet."></textarea>
+        <div class="aide"><span class="err" id="err-descriptif"></span><span id="compteur">0 / 1500</span></div></div>
+      <label class="consent plein" for="accord"><input type="checkbox" id="accord"><span>J'accepte que mes données soient utilisées uniquement pour répondre à ma demande, conformément à la loi 2017-20 portant code du numérique et à la <a href="#confidentialite">politique de confidentialité</a>. <i style="font-style:normal;color:var(--vert-gris)">*</i></span></label>
+      <span class="err plein" id="err-accord"></span>
+      <div class="envoyer plein"><button type="submit">Envoyer par e-mail</button></div>
+
+      <div class="pret" id="pret" hidden aria-live="polite">
+        <h2>Dernière étape : envoyez le message.</h2>
+        <ol class="etapes">
+          <li>Votre messagerie s'est ouverte avec le message déjà rédigé : appuyez sur <b>Envoyer</b>.</li>
+          <li>Le cabinet vous répondra par e-mail à l'adresse que vous avez indiquée.</li>
+        </ol>
+        <p class="note">Votre messagerie ne s'est pas ouverte ? Copiez le texte ci-dessous et adressez-le à <b id="email-rappel">contact@cabinetnhm</b>.</p>
+        <pre id="apercu"></pre>
+        <div class="boutons"><button type="button" id="copier">Copier le message</button><button type="button" id="modifier">Modifier le message</button></div>
+        <div class="apres"><a class="btn" href="#accueil">Retour à l'accueil</a><a class="lien-suite" href="#domaines">Voir les domaines d'intervention</a></div>
+      </div>
+    </form>
+  </div>
+</section>
+<!-- ===== POLITIQUE DE CONFIDENTIALITÉ ===== -->
+<section class="bloc politique" id="confidentialite" data-page="confidentialite" data-groupe="confidentialite" hidden>
+  <div class="wrap">
+    <nav class="fil" aria-label="Vous êtes ici"><a href="#accueil">Accueil</a><span aria-hidden="true">›</span><span aria-current="page">Politique de confidentialité</span></nav>
+    <p class="eyebrow">Données personnelles</p>
+    <h1>Politique de confidentialité des données personnelles</h1>
+    <div class="texte">
+      <p>Le cabinet d'avocat de Me Nelson HANS-MOEVI AKUE met en œuvre un traitement des données à caractère personnel de ses clients. Ce traitement est autorisé au titre de la délibération n° 2025-6388/APDP/Pt/AP/SC-R/SA/CL de l'Autorité de Protection des Données Personnelles (APDP). Il présente les caractéristiques suivantes :</p>
+    </div>
+    <p class="glisser">Faites glisser le tableau vers la gauche pour tout voir →</p>
+    <div class="tableau">
+      <table>
+        <thead><tr><th>Finalité</th><th>Base légale</th><th>Catégories de données</th><th>Catégories de personnes</th><th>Durée</th></tr></thead>
+        <tbody>
+          <tr><td>Production, gestion, suivi des dossiers de ses clients</td><td rowspan="3">Exécution de mesures précontractuelles ou du contrat</td><td>Identité / État civil<br>Vie personnelle et/ou professionnelle<br>Informations d'ordre économique et financier</td><td>Clients</td><td>Durée de la relation contractuelle. Les données sont ensuite archivées pour la durée des délais de prescription.</td></tr>
+          <tr><td>Facturation</td><td>Identité / État civil<br>Informations d'ordre économique et financier</td><td>Clients</td><td>Jusqu'à la clôture de l'exercice comptable et archivage a minima 5 ans à compter de la date de clôture de l'exercice comptable au cours duquel la facture a été émise.</td></tr>
+          <tr><td>Recouvrement</td><td>Identité / État civil<br>Informations d'ordre économique et financier</td><td>Clients</td><td>Conservation jusqu'à complet paiement des honoraires ou épuisement des voies et délais de recours.</td></tr>
+          <tr><td>Prévention du blanchiment et du financement du terrorisme et lutte contre la corruption</td><td rowspan="2">Respect d'obligations légales et réglementaires</td><td>Identité / État civil<br>Vie personnelle et/ou professionnelle<br>Informations d'ordre économique et financier</td><td>Clients</td><td>Conservation jusqu'à la fin de la relation contractuelle et archivage jusqu'à l'expiration du délai de prescription.</td></tr>
+          <tr><td>Comptabilité</td><td>Identité / État civil<br>Informations d'ordre économique et financier</td><td>Clients</td><td>Conservation jusqu'au dépôt des comptes et archivage a minima jusqu'à 5 ans après la clôture de l'exercice comptable.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="texte">
+      <p>En fonction des finalités prévues ci-avant, les catégories de données conservées pourront légèrement différer, ces dernières étant essentiellement liées à la nature de la mission confiée. Ces informations sont nécessaires à la poursuite des finalités identifiées ci-dessus.</p>
+      <p>Dans l'hypothèse où la mission le requiert, des données sensibles au sens de la réglementation applicable peuvent être traitées, notamment lorsqu'elles sont nécessaires :</p>
+      <ul>
+        <li>à la constatation, à l'exercice ou à la défense d'un droit en justice ;</li>
+        <li>ou aux fins de l'exécution des obligations et de l'exercice des droits propres au responsable du traitement ou à la personne concernée en matière de droit du travail, de la sécurité sociale et de la protection sociale.</li>
+      </ul>
+      <h2>Destinataires des données</h2>
+      <p>Les données traitées sont destinées aux personnes habilitées du cabinet. Elles peuvent être communiquées aux tribunaux dans le cadre de l'exécution de la mission de l'avocat, ou à toute administration envers laquelle l'avocat a une obligation légale de transmission des données. Elles peuvent également être transférées à un hébergeur de données pour leur stockage sur serveur (service cloud). Dans le cadre de l'exécution du contrat, l'avocat déclare transférer les données à la société Proton AG, sise 32 Route de la Galaise, Plan-les-Ouates, Genève 1228, Suisse, aux seules fins de leur conservation.</p>
+      <h2>Vos droits</h2>
+      <p>Dans les conditions définies par la loi n° 2017-20 du 20 avril 2018 portant code du numérique en République du Bénin sur la protection des données, les personnes physiques disposent d'un droit d'accès aux données les concernant, de rectification, de limitation, de portabilité et d'effacement de ces données.</p>
+      <p>Les personnes concernées par les traitements mis en œuvre disposent également du droit de s'opposer à tout moment, pour des raisons tenant à leur situation particulière, à un traitement des données à caractère personnel ayant comme base juridique l'intérêt légitime du cabinet, ainsi que d'un droit d'opposition à la prospection commerciale.</p>
+      <p>Elles disposent également du droit de définir des directives générales et particulières définissant la manière dont elles entendent que soient exercés, après leur décès, les droits mentionnés ci-dessus.</p>
+      <p>Les personnes concernées peuvent exercer l'ensemble des droits mentionnés ci-dessus en écrivant par courrier électronique à l'adresse suivante : <b>contact@cabinetnhm</b>, ou par courrier postal à l'adresse suivante : Me Nelson HANS-MOEVI AKUE, Lot 957, Sikècodji Enagnon, Immeuble Fifamin, Cotonou, 08 BP 358, accompagné d'une copie d'un titre d'identité signé.</p>
+      <h2>Réclamation</h2>
+      <p>Les personnes concernées disposent du droit d'introduire une réclamation auprès de l'APDP, déposée au siège de l'institution, Rue 6.076 Aïdjèdo, Cotonou, ou adressée (par e-mail uniquement) à : contact@apdp.bj, sans préjudice d'un recours devant un tribunal compétent.</p>
+      <p class="signature">Fait à Cotonou, le 18 février 2026<br><b>Nelson HANS-MOEVI AKUE</b>, Avocat</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="haut">
+      <h4>Contact</h4>
+      <ul><li id="adresse-pied">Lot 957, Sikècodji Enagnon, Immeuble Fifamin, Cotonou — 08 BP 358</li><li>contact@cabinetnhm</li><li><a href="#contact">Nous écrire</a></li></ul>
+    </div>
+
+    <details class="mentions" id="mentions">
+      <summary>Mentions légales</summary>
+      <div class="contenu">
+        <h5>Protection des données personnelles</h5>
+        <p>Conformément à la loi 2017-20 portant code du numérique en République du Bénin (Livre 5<sup>e</sup> relatif à la protection des données personnelles et de la vie privée), le traitement des données à caractère personnel mis en œuvre par le cabinet est autorisé au titre de la délibération n° 2025-6388/APDP/Pt/AP/SC-R/SA/CL de l'Autorité de Protection des Données Personnelles (<a href="https://www.apdp.bj" target="_blank" rel="noopener">www.apdp.bj</a>). Le détail de ce traitement figure dans la <a href="#confidentialite">politique de confidentialité</a>.</p>
+        <p>En tout état de cause, le cabinet d'avocat MOEVI HANS et associés ne collecte des informations personnelles relatives à l'utilisateur que pour le besoin de certains services proposés par le site cabinet d'avocat MOEVI HANS et associés. L'utilisateur fournit ces informations en toute connaissance de cause, notamment lorsqu'il procède par lui-même à leur saisie.</p>
+        <p>Conformément aux dispositions de la loi 2017-20 portant code du numérique en République du Bénin, tout utilisateur dispose d'un droit d'accès, de rectification et d'opposition aux données personnelles le concernant, en effectuant sa demande écrite et signée, accompagnée d'une copie du titre d'identité avec signature du titulaire de la pièce, en précisant l'adresse à laquelle la réponse doit être envoyée.</p>
+        <p>Aucune information personnelle de l'utilisateur du site cabinet d'avocat MOEVI HANS et associés n'est publiée à l'insu de l'utilisateur, échangée, transférée, cédée ou vendue sur un support quelconque à des tiers.</p>
+        <h5>Droit d'accès</h5>
+        <p>En application de cette loi, les internautes disposent d'un droit d'accès, de rectification, de modification et de suppression concernant les données qui les concernent personnellement. Ce droit peut être exercé par voie postale auprès de Me Nelson HANS-MOEVI AKUE, Lot 957, Sikècodji Enagnon, Immeuble Fifamin, Cotonou — 08 BP 358 ou par voie électronique à l'adresse e-mail suivante : contact@cabinetnhm. Les informations personnelles collectées ne sont en aucun cas confiées à des tiers.</p>
+        <h5>Confidentialité</h5>
+        <p>Vos données personnelles sont confidentielles et ne seront en aucun cas communiquées à des tiers.</p>
+        <h5>Propriété intellectuelle</h5>
+        <p>Tout le contenu du présent site, incluant, de façon non limitative, les graphismes, images, textes, vidéos, animations, sons, logos, gifs et icônes ainsi que leur mise en forme sont la propriété exclusive du cabinet d'avocat MOEVI HANS et associés, à l'exception des marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.</p>
+        <p>Toute reproduction, distribution, modification, adaptation, retransmission ou publication, même partielle, de ces différents éléments est strictement interdite sans l'accord exprès par écrit du cabinet d'avocat MOEVI HANS et associés.</p>
+        <h5>Conditions d'utilisation</h5>
+        <p><b>Objet du site.</b> Le présent site a pour objet de présenter le cabinet et ses domaines d'intervention. Les informations qui y figurent ont un caractère général : elles ne constituent pas une consultation juridique et ne sauraient remplacer l'avis personnalisé d'un avocat.</p>
+        <p><b>Absence de relation avocat-client.</b> L'envoi d'un message par le formulaire de contact ne crée pas de relation avocat-client. Celle-ci n'existe qu'après acceptation expresse du dossier par Me Nelson HANS-MOEVI AKUE, dans les conditions convenues avec lui.</p>
+        <p><b>Responsabilité.</b> Le cabinet veille à l'exactitude des informations publiées, sans pouvoir en garantir l'exhaustivité ni la mise à jour permanente. Il ne saurait être tenu responsable d'une décision prise sur le seul fondement de ces informations, ni du contenu des sites extérieurs vers lesquels le site renvoie.</p>
+        <p><b>Droit applicable.</b> Les présentes conditions sont soumises au droit béninois. Tout litige relatif à l'utilisation du site relève de la compétence des juridictions de Cotonou.</p>
+        <p><b>Modification.</b> Le cabinet se réserve le droit de modifier à tout moment le contenu du site et les présentes conditions.</p>
+      </div>
+    </details>
+
+    <div class="bas"><span>© <span id="annee">2026</span> Cabinet HANS-MOEVI AKUE — Tous droits réservés.</span><span>Conçu par SIP</span><span class="liens-bas"><a href="#confidentialite">Politique de confidentialité</a><a href="#mentions">Mentions légales</a></span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* Adresse e-mail de réception du cabinet — à compléter avec l'adresse définitive */
+  var EMAIL_CABINET='contact@cabinetnhm';
+
+  var burger=document.getElementById('burger'), menu=document.getElementById('menu');
+  function fermerMenu(){menu.classList.remove('open');burger.setAttribute('aria-expanded','false');burger.textContent='Menu';}
+  burger.addEventListener('click',function(){var o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o);burger.textContent=o?'Fermer':'Menu';});
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',fermerMenu);});
+  document.getElementById('annee').textContent=new Date().getFullYear();
+  var mentions=document.getElementById('mentions');
+  document.querySelectorAll('a[href="#mentions"]').forEach(function(a){a.addEventListener('click',function(){mentions.open=true;});});
+
+  /* Pages */
+  var pages=[].slice.call(document.querySelectorAll('[data-page]')), liensMenu=menu.querySelectorAll('a');
+  function route(){
+    var id=location.hash.slice(1)||'accueil', el=document.getElementById(id);
+    if(!el) el=document.getElementById('accueil');
+    var hote=el.closest('[data-page]');
+    if(!hote) return;
+    pages.forEach(function(p){p.hidden=p!==hote;});
+    var groupe=hote.getAttribute('data-groupe');
+    document.body.setAttribute('data-page',groupe||'');
+    if(groupe!=='contact'&&envoye) reinitialiser();
+    liensMenu.forEach(function(a){if(groupe&&a.getAttribute('data-groupe')===groupe)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+    if(el===hote) window.scrollTo(0,0); else el.scrollIntoView({behavior:'smooth'});
+  }
+  window.addEventListener('hashchange',route); route();
+
+  /* Contact */
+  var f=document.getElementById('form-contact'), sel=document.getElementById('domaine'), desc=document.getElementById('descriptif');
+  document.querySelectorAll('a[data-domaine]').forEach(function(a){a.addEventListener('click',function(){sel.value=a.dataset.domaine;});});
+  desc.addEventListener('input',function(){document.getElementById('compteur').textContent=desc.value.length+' / 1500';});
+  function err(id,msg){var e=document.getElementById('err-'+id);e.textContent=msg||'';var c=e.closest('.champ');if(c)c.classList.toggle('invalide',!!msg);return !msg;}
+  function v(id){return document.getElementById(id).value.trim();}
+  function check(){
+    var ok=true;
+    ok=err('nom',v('nom').length<2?'Indiquez votre nom et prénom.':'')&&ok;
+    ok=err('email',!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v('email'))?'Indiquez une adresse e-mail valide, par exemple nom@domaine.bj.':'')&&ok;
+    ok=err('descriptif',v('descriptif').length<20?'Décrivez votre affaire en quelques lignes (20 caractères minimum).':'')&&ok;
+    ok=err('accord',!document.getElementById('accord').checked?'Cochez la case pour autoriser le traitement de votre demande.':'')&&ok;
+    return ok;
+  }
+  var sujet='', corps='', envoye=false;
+  function reinitialiser(){envoye=false;f.reset();document.getElementById('compteur').textContent='0 / 1500';f.querySelectorAll('[hidden]').forEach(function(el){el.hidden=false;});document.getElementById('pret').hidden=true;document.getElementById('copier').textContent='Copier le message';}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!check()){var p=f.querySelector('.invalide input,.invalide textarea');if(p)p.focus();return;}
+    var dom=v('domaine')||'Non précisé';
+    sujet='Demande de contact — '+dom+' — '+v('nom');
+    corps='Nom : '+v('nom')+'\nE-mail : '+v('email')+'\nDomaine : '+dom+'\n\nDescriptif de l\'affaire :\n'+v('descriptif');
+    document.getElementById('apercu').textContent='À : '+EMAIL_CABINET+'\nObjet : '+sujet+'\n\n'+corps;
+    f.querySelectorAll('.champ,.consent,.envoyer,#err-accord').forEach(function(el){el.hidden=true;});
+    document.getElementById('pret').hidden=false; envoye=true;
+    document.getElementById('pret').scrollIntoView({block:'start'});
+    window.location.href='mailto:'+EMAIL_CABINET+'?subject='+encodeURIComponent(sujet)+'&body='+encodeURIComponent(corps);
+  });
+  document.getElementById('copier').addEventListener('click',function(){
+    var b=this, t=document.getElementById('apercu').textContent;
+    function selection(){var r=document.createRange();r.selectNodeContents(document.getElementById('apercu'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Texte sélectionné : copiez-le';}
+    try{navigator.clipboard.writeText(t).then(function(){b.textContent='Message copié';},selection);}catch(x){selection();}
+  });
+  document.getElementById('modifier').addEventListener('click',function(){
+    f.querySelectorAll('[hidden]').forEach(function(el){el.hidden=false;});
+    document.getElementById('pret').hidden=true; document.getElementById('copier').textContent='Copier le message';
+    desc.focus();
+  });
+  f.addEventListener('input',function(e){var c=e.target.closest('.champ');if(c&&c.classList.contains('invalide'))check();});
+})();
+</script>
+
+</body>
+</html>
